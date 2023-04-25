@@ -1,0 +1,37 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HR SOPs Research</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand card-title text-center" href="/">*Aamaazon HR Department Powered by OpenAI</a>
+      <h2><span>Developed by: Urim Aliu</span></h2>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 mt-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Use Natural Language to Quickly Search Your Employee GuideBook</h5>
+            <form action="/search" method="post">
+              <div class="form-group">
+                <label for="query">Enter your question here:</label>
+                <input type="text" placeholder="ie: How many vacation days do I get this year?" class="form-control" id="query" name="query" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
